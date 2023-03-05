@@ -1,0 +1,22 @@
+#Rehacer las definiciones anteriores.
+
+tipo CUENTA es registro
+    titular : CADENA
+    numero : ENTERO
+    movimientos_mensuales : ARREGLO[1..12] DE REAL 
+    movimientos_anuales : ARREGLO[1..5] DE REAL 
+fin tipo
+
+funcion saldo_final(cuenta : CUENTA) : REAL
+
+    variable
+        saldo : REAL ← 0
+    inicio
+        para i desde 1 hasta longitud(cuenta.movimientos_mensuales) hacer
+            saldo ← saldo + cuenta.movimientos_mensuales[i]
+        fin para
+        para i desde 1 hasta longitud(cuenta.movimientos_anuales) hacer
+            saldo ← saldo + cuenta.movimientos_anuales[i]
+        fin para
+        Resultado ← saldo
+    fin funcion

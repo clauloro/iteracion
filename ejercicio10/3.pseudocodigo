@@ -1,0 +1,22 @@
+- - IDENTIDAD: "VACÍO"
+    edad: infinito
+    es el hijo de: [0, 0]
+  - IDENTIDAD: "BORRADO"
+    edad: infinito
+    es el hijo de: [0, 0]
+  - IDENTIDAD: "HUÉRFANO"
+    edad: infinito
+    es el hijo de: [0, 0]
+  # se agregan más personas aquí...
+  
+- # segunda familia
+  # se agregan más personas aquí...
+  
+# se agregan más familias aquí...
+
+- actualizar_edades: |
+    - for familia in familias:
+        for persona in familia:
+            if persona["IDENTIDAD"] != "VACÍO" and persona["IDENTIDAD"] != "BORRADO" and persona["IDENTIDAD"] != "HUÉRFANO":
+                persona["edad"] += 1
+

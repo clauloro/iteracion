@@ -1,0 +1,9 @@
+padre_jaime = None
+for persona in familias:
+    if persona.nombre == 'Jaime MARTÍN':
+        padre_jaime = persona.padre
+        break
+hermanos_jaime = []
+for persona in familias:
+    if persona.padre == padre_jaime and persona.nombre != 'Jaime MARTÍN':
+        hermanos_jaime.append(persona)

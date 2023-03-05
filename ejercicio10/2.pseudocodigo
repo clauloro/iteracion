@@ -1,0 +1,7 @@
+personas_20_30años = lista vacía
+
+para cada persona en familias:
+    si persona.identidad no es VACÍO y persona.identidad no es BORRADO:
+        si 20 <= persona.edad <= 30:
+            añadir persona a personas_20_30años
+

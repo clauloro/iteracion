@@ -1,0 +1,15 @@
+Función añadir_palabra(palabra_nueva):
+    anterior = None
+    actual = indice_min(diccionario) - 1 
+    fin = indice_max(diccionario) + 1 
+    
+    mientras actual != fin y diccionario[actual].palabra < palabra_nueva:
+        anterior = actual
+        actual = diccionario[actual].siguiente
+    
+    nueva_palabra = PALABRA()
+    nueva_palabra.palabra = palabra_nueva
+    nueva_palabra.anterior = anterior
+    
+    if anterior != None:
+        nueva_palabra.siguiente = diccionario

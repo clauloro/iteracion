@@ -1,0 +1,11 @@
+ALGORITMO mcd(a, b)
+// Devuelve el máximo común divisor de a y b
+
+MIENTRAS a != b HACER
+  SI a > b ENTONCES
+    a = a - b
+  SI b > a ENTONCES
+    b = b - a
+
+DEVOLVER a
+FIN

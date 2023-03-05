@@ -1,0 +1,12 @@
+Función buscar_palabras(letra):
+    palabras = [] # Lista de palabras que empiezan con la letra dada
+    actual = indice_min(diccionario) - 1 # Índice de la primera palabra en orden alfabético
+    fin = indice_max(diccionario) + 1 # Índice de la última palabra en orden alfabético
+    
+    mientras actual != fin:
+        si diccionario[actual][0] == letra:
+            palabras.append(diccionario[actual])
+        actual = siguiente[actual]
+    
+    devolver palabras
+

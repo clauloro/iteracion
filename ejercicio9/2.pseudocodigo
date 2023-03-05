@@ -1,0 +1,17 @@
+Tipo PALABRA:
+    palabra: cadena
+    anterior: entero
+    siguiente: entero
+
+Función buscar_palabras(letra):
+    palabras = [] 
+    actual = indice_min(diccionario) - 1 
+    fin = indice_max(diccionario) + 1
+    
+    mientras actual != fin:
+        si diccionario[actual].palabra[0] == letra:
+            palabras.append(diccionario[actual].palabra)
+        actual = diccionario[actual].siguiente
+    
+    devolver palabras
+

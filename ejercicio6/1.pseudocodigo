@@ -1,0 +1,10 @@
+#Modificar el tipo CUENTA definido en el capítulo «Estructuras elementales» 
+#para conservar el rastro de los movimientos en una cuenta durante un mes.
+tipo CUENTA es registro
+    titular : CADENA
+    numero : ENTERO
+    movimientos : ARREGLO[1..12] DE REAL
+fin tipo
+
+
+

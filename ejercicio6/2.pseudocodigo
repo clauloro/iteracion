@@ -1,0 +1,10 @@
+#Establecer el saldo a final de mes de una cuenta dada.
+funcion saldo_final(cuenta : CUENTA) : REAL
+    variable
+        saldo : REAL ← 0
+    inicio
+        para i desde 1 hasta longitud(cuenta.movimientos) hacer 
+        saldo ← saldo + cuenta.movimientos[i]
+        fin para
+        Resultado ← saldo
+    fin funcion

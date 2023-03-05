@@ -1,0 +1,21 @@
+EliminarPalabra(palabraAEliminar):
+    encontrado = False
+    indice = 0
+    while indice < longitud(diccionario) y no encontrado:
+        if diccionario[indice].palabra == palabraAEliminar:
+            encontrado = True
+        else:
+            indice = siguiente[indice]
+    if encontrado:
+        anterior = diccionario[indice].anterior
+        siguiente = diccionario[indice].siguiente
+        if anterior >= 0:
+            siguiente[anterior] = siguiente[indice]
+        
+        if siguiente[indice] >= 0:
+            anterior[siguiente[indice]] = anterior
+        
+        diccionario[indice] = None
+        
+    else:
+        imprimir("La palabra no se encontró en el diccionario")

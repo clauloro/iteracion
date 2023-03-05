@@ -1,0 +1,13 @@
+ALGORITMO mcd(a, b)
+// Devuelve el máximo común divisor de a y b
+
+SI b > a ENTONCES
+  INTERCAMBIAR a Y b
+
+MIENTRAS b != 0 HACER
+  r = a % b
+  a = b
+  b = r
+
+DEVOLVER a
+FIN
